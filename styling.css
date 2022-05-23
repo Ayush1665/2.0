@@ -1,0 +1,252 @@
+/* css reset */
+*{
+    margin:0px;
+    padding: 0px;
+
+}
+#navbar{
+    display:flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+
+}
+#navbar::before{
+    content: "";
+    background-color:rgb(0, 0, 0);
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#navbar logo{
+    margin:24px 23px;
+    padding: 34px 23px;
+
+
+}
+#logo img{
+    height: 95px;
+    margin: 0px 0px;
+}
+ul{
+    display: flex;
+    
+}
+ul li {
+    list-style: none;
+    font-size: 1.3rem;
+    position: relative;
+    
+}
+ul li a{
+    color:white;
+    display:block;
+    text-decoration: none; 
+    padding: 23px 22px;
+    border-radius: 40px;
+}
+ul li a:hover{
+    color:black;
+    background-color: white;
+}
+#navbar ul ul{
+    display:none ;
+    position: absolute;
+    background-color: black;
+}
+#navbar ul li:hover>ul{
+    display: block;
+
+}
+#search{
+    padding: 5px;
+    margin-left: 500px;
+    border-radius: 40px;
+
+}
+p{
+    color:white;
+    padding: 30px;
+    font-size: 18px;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    transition: 5s;
+
+    animation: change 20s ease-in-out 1s infinite  forwards ;
+}
+@keyframes change {
+    0%{
+        background:url(piano1.jfif) no-repeat center center/cover;
+    }
+    25%{
+        background:url(piano\ course.jfif) no-repeat center center/cover;
+    } 50%{
+        background:url(p2.jfif) no-repeat center center/cover;
+    } 75%{
+        background:url(images6.jfif) no-repeat center center/cover;
+    }100%{
+        background:url(image7.jfif) no-repeat center center/cover;
+    }
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('p2.jfif') no-repeat center center/cover;
+    height: 500px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 89%;
+    
+}
+
+#home h1{
+    color:cyan;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    font-size: 50px;
+}
+h3{
+    color:yellow;
+    padding: 20px;
+    font-size:23px ;
+}
+.btn{
+   
+    font-size: 20px;
+    border-radius: 40px;
+    width: 200px;
+    padding: 10px;
+    background-color: purple;
+    cursor: pointer;
+    
+}
+.btn a{
+    color: white;
+    text-decoration: none;
+}
+#sty h1{
+    font-size: 40px;
+    font-family:sans-serif;
+    padding: 30px
+}
+
+#main{
+    display: flex;
+}
+#div1{
+    border: 2px solid black;
+    margin: 12px;
+    padding: 40px;
+    width: 33%;
+    height: 300px;
+    font-size: 30px;
+    
+    
+}
+h2{
+    margin: -15px;
+}
+#div1 img{
+    margin: -12px;
+    padding: 48px;
+}
+#div2{
+    border: 2px solid black;
+    margin: 12px;
+    padding: 40px;
+    width: 33%;
+    height: 300px;
+    font-size: 30px;
+    
+   
+}
+#div2 img{
+    margin: 5px;
+    padding: 23px;
+    width: 275px;
+    height: 200px;
+}
+#div3{
+    border: 2px solid black;
+    margin: 12px;
+    padding: 40px;
+    width: 33%;
+    height: 300px;
+    font-size: 30px;
+    
+  
+}
+#div3 img{
+    margin: -12px;
+    padding: 41px;
+    width: 275px;
+    height: 200px;
+}
+.start{
+    width: 100px;
+    padding: 5px;
+    margin-top: 0px;
+    border-radius: 40px;
+    background-color: purple;
+    color:white
+}
+.start a{
+    text-decoration: none;
+   
+    color: white;
+}
+#div4{
+    border: 2px solid black;
+    margin: 12px;
+    padding: 40px;
+    width: 33%;
+    height: 300px;
+    font-size: 30px;
+}
+#div4 img{
+    margin: -12px;
+    padding: 41px;
+    width: 275px;
+    height: 200px;
+}
+#div5{
+    border: 2px solid black;
+    margin: 12px;
+    padding: 40px;
+    width: 33%;
+    height: 300px;
+    font-size: 30px;
+}
+#div5 img{
+    margin: -12px;
+    padding: 41px;
+    width: 275px;
+    height: 200px;
+}
+#div6{
+    border: 2px solid black;
+    margin: 12px;
+    padding: 40px;
+    width: 33%;
+    height: 300px;
+    font-size: 30px;
+}
+#div6 img{
+    margin: -12px;
+    padding: 41px;
+    width: 275px;
+    height: 200px;
+}
